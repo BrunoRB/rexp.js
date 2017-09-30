@@ -1,7 +1,7 @@
 {
 	"name": "rexp.js",
 	"version": "1.0.0",
-	"description": "Simple NFA javascript engine",
+	"description": "Javascript regex engine based om Thompson's algorithm",
 	"keywords": [
 		"compilers",
 		"regex",
