@@ -1,0 +1,49 @@
+<!DOCTYPE html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>rexp.js</title>
+            <meta name="description" content="Visualization of NFAs built with Thompson's algorithm">
+        <style>
+        body {
+            font-size: large;
+        }
+        svg {
+        }
+        .links line {
+          stroke: #999;
+        }
+
+        #user-input {
+            position: absolute;
+            top: 20px;
+        }
+        #user-input input {
+            margin: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="user-input">
+            <a id="github" href="https://github.com/BrunoRB/rexp.js" title="Got to repository page" target="_blank">
+                <strong>rexp.js</strong> <img src="GitHub-Mark-32px.png" />
+            </a>
+            <hr>
+            <input id="user-regex" type="text" placeholder="regex, ex: (a|b)+c" /> <br>
+            <input id="user-string" type="text" placeholder="str to match, ex: aabc" />
+            <button type="button" id="test-user-string">Test</button> <br>
+            <label>
+                Matching speed: <br>
+                <input id="speed" type="range" min="0" max="2" step="0.1" value="1.2" />
+            </label><br>
+            <span id="match-result"></span>
+        </div>
+        <svg>
+        </svg>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.2/d3.min.js"></script>
+        <script src="src/engine.js"></script>
+        <script src="src/show.js"></script>
+    </body>
+</html>

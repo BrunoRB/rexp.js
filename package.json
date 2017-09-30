@@ -1,0 +1,32 @@
+{
+	"name": "rexp.js",
+	"version": "1.0.0",
+	"description": "Simple NFA javascript engine",
+	"keywords": [
+		"compilers",
+		"regex",
+		"nfa"
+	],
+	"homepage": "https://brunorb.github.io/rexp.js/",
+	"license": "MIT",
+	"author": {
+		"name": "Bruno Roberto Búrigo",
+		"url": "https://coderoftomorrow.com"
+	},
+	"main": "src/engine.js",
+	"browser": "src/engine.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/BrunoRB/rexp.js"
+	},
+	"scripts": {
+		"test": "node_modules/.bin/eslint -c .eslintrc.json src/ ; node_modules/.bin/mocha test/"
+	},
+	"dependencies": {
+		"d3": "4.*"
+    },
+	"devDependencies": {
+		"eslint": "4.3.*",
+        "mocha": "3.4.*"
+    }
+}
